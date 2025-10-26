@@ -13,17 +13,17 @@
 
 
 ### How to install:
-```npm i @gurjinder7/regex-simple-checks```
+```npm i regex-simple-checks```
 
 ### How to use:
 
 * Import the package into your application as usual
-  * ```import {containsNoDigit} from '@gurjinder7/regex-simple-checks'```
+  * ```import {containOnlyLetters} from '@gurjinder7/regex-simple-checks'```
 * Checking functions that return boolean:
-  * ```containsAnyDigits(pattern)``` - returns `true` is the pattern contains a digit
+  * ```containAnyDigits(pattern)``` - returns `true` is the pattern contains a digit
   * ```containsAnyNonWordCharacter(pattern)``` - returns `true` if the pattern contains any non word character.
     * This is a broad search for symbols and includes whitespace as well.
-  * ```containsNoDigit(pattern)``` - returns `true` if pattern contains only letters
+  * ```containOnlyLetters(pattern)``` - returns `true` if pattern contains only letters
   * ```containsNoSymbol(pattern)``` - returns `true` if patterns has no symbol
     * Can be used for alphanumeric pattern or only number and only digits patterns
   * ```containsAnySymbol(pattern)``` - returns `true` if one of the following symbol is there in the pattern

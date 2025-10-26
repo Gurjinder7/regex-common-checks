@@ -3,10 +3,10 @@ import {
   startsWithADigitAndEndsWithALetter,
   startsWithALetterAndEndsWithADigit,
   startsWithALetterAndEndsWithALetter,
-  containsAnyDigits,
+  containAnyDigits,
   containsAnyNonWordCharacter,
   containsAnyWhiteSpace,
-  containsNoDigit,
+  containOnlyLetters,
   containsThisOrThatSymbol,
   containsThisSymbol,
   containsNoSymbol,
@@ -47,9 +47,9 @@ test("checks if pattern starts with a letter and ends with a digit", () => {
 });
 
 test("checks if pattern contains any digit", () => {
-    expect(containsAnyDigits("123asdasd#$")).toBeTruthy();
-    expect(containsAnyDigits("asdasdkjh*(asd")).toBeFalsy();
-    expect(containsAnyDigits("!@#asdasd")).toBeFalsy();
+    expect(containAnyDigits("123asdasd#$")).toBeTruthy();
+    expect(containAnyDigits("asdasdkjh*(asd")).toBeFalsy();
+    expect(containAnyDigits("!@#asdasd")).toBeFalsy();
   
   });
 
@@ -70,9 +70,9 @@ test("checks if pattern contains any digit", () => {
   });
 
   test("checks if pattern contains No digit", () => {
-    expect(containsNoDigit("asdasd")).toBeTruthy();
-    expect(containsNoDigit("as123dasd")).toBeFalsy();
-    expect(containsNoDigit("as$dasd")).toBeFalsy();
+    expect(containOnlyLetters("asdasd")).toBeTruthy();
+    expect(containOnlyLetters("as123dasd")).toBeFalsy();
+    expect(containOnlyLetters("as$dasd")).toBeFalsy();
   
   });
 

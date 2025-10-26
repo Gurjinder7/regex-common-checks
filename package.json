@@ -1,6 +1,6 @@
 {
-  "name": "@gurjinder7/regex-simple-checks",
-  "version": "1.0.0",
+  "name": "regex-simple-checks",
+  "version": "1.0.4",
   "description": "Common regex checks that you can use in the JavaScript world without looking for them and making sure they work!",
   "main": "lib/index.js",
   "scripts": {
@@ -29,7 +29,8 @@
   "devDependencies": {
     "@babel/cli": "^7.27.0",
     "@babel/preset-env": "^7.26.9",
-    "jest": "^29.7.0"
+    "jest": "^29.7.0",
+    "jsdoc": "^4.0.5"
   },
   "type": "module"
 }
